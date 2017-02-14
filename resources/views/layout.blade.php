@@ -10,13 +10,19 @@
     <title>@yield('title')</title>
 
     <link rel="stylesheet"
-          href="/css/app.css">
+          href="/assets/css/app.css">
 
 </head>
 <body>
-<div>
-    menu
+<a href="/" class="logo">
+    <img src="/assets/img/logo.png"
+         alt="Сквер">
+</a>
+
     @yield('content')
-</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/assets/js/jquery.fullpage.min.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>

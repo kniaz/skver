@@ -1,3 +1,5 @@
+@import url('jquery.fullpage.min.css');
+@import url('bootstrap.css');
 @font-face {
   font-family: "GothamPro";
   src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -70,4 +72,60 @@
 }
 body {
   font-family: "GothamPro", sans-serif;
+}
+.item__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+}
+.fp-section {
+  overflow: hidden;
+  background: #000000;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.fp-section h1 {
+  font-weight: 600;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  font-size: 64px;
+  position: relative;
+}
+.fp-section h1:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 4px;
+  background: #ffffff;
+  width: 60px;
+  bottom: -30px;
+}
+@media (max-width: 768px) {
+  .fp-section {
+    font-size: 16px;
+  }
+  .fp-section h1 {
+    font-size: 26px;
+  }
+}
+.item__image {
+  height: 100vh;
+  margin-top: -40px;
+  background-size: cover;
+}
+.logo {
+  z-index: 2;
+  position: absolute;
+  width: 55px;
+  top: 10px;
+  left: 30px;
+}
+img {
+  max-width: 100%;
 }
