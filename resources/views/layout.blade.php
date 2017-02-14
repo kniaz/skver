@@ -23,6 +23,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/js/jquery.fullpage.min.js"></script>
+<script src="/assets/js/jquery.event.frame.js"></script>
+<script src="/assets/js/jquery.parallax.min.js"></script>
 <script src="/assets/js/app.js"></script>
 </body>
 </html>
