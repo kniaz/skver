@@ -16,9 +16,9 @@ class CreatePagesTable extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('alias')->unique();
-            $table->string('SEOtitle');
-            $table->string('SEOdescription');
-            $table->string('SEOkeywords')->nullable();
+            $table->string('seo_title');
+            $table->string('seo_description');
+            $table->string('seo_keywords')->nullable();
             $table->integer('parent')->nullable();
             $table->smallInteger('active')->default('1');
             $table->timestamps();
