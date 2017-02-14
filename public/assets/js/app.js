@@ -11,4 +11,9 @@ $(document).ready(function() {
       navigation: true,
       navigationPosition: 'right'
     });
+
+    jQuery('#parallax .parallax-layer')
+      .parallax({
+          mouseport: jQuery('#parallax')
+      });
 });
