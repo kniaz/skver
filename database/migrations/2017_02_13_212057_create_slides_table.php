@@ -19,7 +19,7 @@ class CreateSlidesTable extends Migration
             $table->enum('type',['page','image-page','gallery'])->default('page');
             $table->text('text')->nullable();
             $table->string('image')->nullable();
-            $table->string('gallery')->nullable();
+            $table->json('gallery')->nullable();
             $table->string('background')->nullable();
             $table->timestamps();
 
