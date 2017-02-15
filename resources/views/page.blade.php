@@ -2,7 +2,7 @@
 
 @section('title' ) {{ $page->seo_title }} @endsection
 @section('keywords' ) {{ $page->seo_keywords }} @endsection
-@section('descroption' ) {{ $page->seo_descroption }} @endsection
+@section('description' ) {{ $page->seo_description }} @endsection
 
 @section('content')
     <div id="fullpage">

@@ -26,8 +26,18 @@
     @foreach($menu->getMenu() as $item)
         <li>
             <a href="{{$item->url}}">{{$item->name}}</a>
+
+            @if ($item->url == 'menu')
+                <div class="subnav next-level-left">
+                    <ul class="subnav-wrapper">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.skver.od.ua/wp-content/uploads/2017/01/МЕНЮ-ЗИМА-1.pdf">Основное меню</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.skver.od.ua/wp-content/uploads/2016/12/меню-коктейли-1.pdf">Меню Коктейли</a></li>
+                    </ul>
+                </div>
+            @endif
         </li>
     @endforeach
+
         <li>
             <a target="_blank" href="https://www.facebook.com/restaurant.skver/"><i class="fa fa-facebook"></i> </a>
         </li>
@@ -42,8 +52,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/js/jquery.fullpage.min.js"></script>
-<script src="/assets/js/jquery.event.frame.js"></script>
 <script src="/assets/js/jquery.parallax.min.js"></script>
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 <script src="/assets/js/app.js"></script>
 

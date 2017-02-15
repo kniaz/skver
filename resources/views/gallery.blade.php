@@ -3,7 +3,7 @@
 @if($page)
 @section('title' ) {{ $page->seo_title }} @endsection
 @section('keywords' ) {{ $page->seo_keywords }} @endsection
-@section('descroption' ) {{ $page->seo_descroption }} @endsection
+@section('description' ) {{ $page->seo_description }} @endsection
 @endif
 @section('content')
     <div id="fullpage" class="gallery-page">

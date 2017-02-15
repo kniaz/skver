@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome', ['title'=>'tete']);
+    return view('welcome', ['title'=>'Главная']);
+});
+Route::get('/menu', function () {
+    return view('menupdf', ['title'=>'Меню']);
 });
 Route::get('/gallery', 'PageController@gallery');
 Route::get('/{alias}', 'PageController@show');
