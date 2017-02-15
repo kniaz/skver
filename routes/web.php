@@ -14,4 +14,5 @@
 Route::get('/', function () {
     return view('welcome', ['title'=>'tete']);
 });
+Route::get('/gallery', 'PageController@gallery');
 Route::get('/{alias}', 'PageController@show');

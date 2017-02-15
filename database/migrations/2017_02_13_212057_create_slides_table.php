@@ -22,7 +22,7 @@ class CreateSlidesTable extends Migration
             $table->json('gallery')->nullable();
             $table->string('background')->nullable();
             $table->timestamps();
-
+            
             $table->foreign('page_id')
                 ->references('id')->on('pages')
                 ->onDelete('cascade');

@@ -11,8 +11,20 @@ class PageController extends Controller
     public function show($alias)
     {
 
-        $page = Page::with('slides')->where('alias', '=', $alias)->get()[0];
+        $page = Page::with('slides')->where('alias', '=', $alias)->get();
+        if (isset($page[0])){
+            $page= $page[0];
+            return view('page',['page'=>$page]);
+        }
+        // return 404;
+    }
 
-        return view('page',['page'=>$page]);
+    public function gallery(){
+        $page = Page::with('slides')->where('alias', '=', 'gallery')->get();
+
+            $page = isset($page[0])?$page[0]:null;
+
+        $galleries = Page::with('slides')->where('is_gallery', '=', 1)->get();
+        return view('gallery',['galleries'=>$galleries, 'page'=>$page]);
     }
 }
