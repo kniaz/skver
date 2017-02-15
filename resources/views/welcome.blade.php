@@ -22,7 +22,7 @@
                     <p style="text-align: left;">
                     </p><div class="vc_row wpb_row vc_row-fluid hidden"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div></div>
 
-                    <a href="https://www.skver.od.ua/wp-content/uploads/2017/01/%D0%9C%D0%95%D0%9D%D0%AE-%D0%97%D0%98%D0%9C%D0%90-1.pdf" class="hidden-md hidden-lg booking-switch home-left-button" style="font-family: lato; font-weight: 900; font-size: 12px; letter-spacing: 2px; padding: 15px; border: 2px solid #333; text-align: center; cursor: pointer; margin-bottom: 15px; "><span>НАШЕ МЕНЮ</span></a>
+                    <a href="https://www.skver.od.ua/wp-content/uploads/2017/01/%D0%9C%D0%95%D0%9D%D0%AE-%D0%97%D0%98%D0%9C%D0%90-1.pdf" class="hidden-md hidden-lg booking-switch home-left-button" style="font-family: lato; font-weight: 900; font-size: 12px; letter-spacing: 2px; padding: 15px; border: 2px solid #333; text-align: center; cursor: pointer; margin-bottom: 15px; "><span>МЕНЮ РЕСТОРАНА</span></a>
 
                 </div>
                 <div class="home-info-footer bottom">
@@ -66,7 +66,7 @@
                     <div class="button-wrapper">
 					<span class="second-border button-content button-frame" style="position: relative; ">
 						<span class="button-frame-inner" style="transform: translateX(0px) translateY(0px);">
-							<span class="second-line">НАШЕ МЕНЮ</span>
+							<span class="second-line">МЕНЮ РЕСТОРАНА</span>
 							<span class="button-frame-hover"
                                   style="position: absolute; left: -2px; top: -2px; right: -2px; bottom: -2px; display: block; border: 2px solid rgb(255, 255, 255); transform: translateX(0px) translateY(0px); opacity: 0;"></span>
 						</span>
@@ -76,7 +76,7 @@
                 <li class="layer" data-depth="0.80">
                     <div class="button-wrapper">
                         <div class="button-content button-arrow" style="opacity: 1;">
-                            <span class="second-line">НАШЕ МЕНЮ</span>
+                            <span class="second-line">МЕНЮ РЕСТОРАНА</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="second-border"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100%"
                                  viewBox="0 0 100 50" preserveAspectRatio="xMidYMid meet" zoomAndPan="disable">
@@ -92,7 +92,7 @@
                     <div class="button-wrapper">
 					<span class="button-content button-text">
 												<a href="/menu" class="second-line" data-replace="14 | 02 | 2017"
-                                                   data-base="НАШЕ МЕНЮ">НАШЕ МЕНЮ</a>
+                                                   data-base="МЕНЮ РЕСТОРАНА">МЕНЮ РЕСТОРАНА</a>
 						<div id="reservation-trigger"></div>
 					</span>
                     </div>
