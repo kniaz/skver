@@ -36,6 +36,7 @@
 
                     <div class="gallery">
                         <div class="fotorama b-fotorama" data-loop="true" data-width="100%"    data-minheight="100%" data-maxheight="100%" data-nav="thumbs" data-fit="cover">
+
                             <img src="http://s.fotorama.io/1.jpg">
                             <img src="http://s.fotorama.io/2.jpg">
                         </div>
