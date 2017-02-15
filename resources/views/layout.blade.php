@@ -12,6 +12,8 @@
     <link rel="stylesheet"
           href="/assets/css/app.css">
 
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
 </head>
 <body>
 <a href="/" class="logo">
@@ -25,6 +27,8 @@
 <script src="/assets/js/jquery.fullpage.min.js"></script>
 <script src="/assets/js/jquery.event.frame.js"></script>
 <script src="/assets/js/jquery.parallax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 <script src="/assets/js/app.js"></script>
+
 </body>
 </html>
