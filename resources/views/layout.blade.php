@@ -9,10 +9,9 @@
 
     <title>@yield('title')</title>
 
-    <link rel="stylesheet"
-          href="/assets/css/app.css">
-
+    <link rel="stylesheet" href="/assets/css/app.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- 3 KB -->
 
 </head>
 <body>
@@ -21,7 +20,25 @@
          alt="Сквер">
 </a>
 
+<nav class="menu">
+    <ul>
+    @inject('menu', 'App\Services\MainMenuService')
+    @foreach($menu->getMenu() as $item)
+        <li>
+            <a href="{{$item->url}}">{{$item->name}}</a>
+        </li>
+    @endforeach
+        <li>
+            <a target="_blank" href="https://www.facebook.com/restaurant.skver/"><i class="fa fa-facebook"></i> </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.instagram.com/restaurant.skver/"><i class="fa fa-instagram"></i> </a>
+        </li>
+    </ul>
+</nav>
+
     @yield('content')
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/js/jquery.fullpage.min.js"></script>
