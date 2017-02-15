@@ -15,6 +15,8 @@ class PageController extends Controller
         if (isset($page[0])){
             $page= $page[0];
             return view('page',['page'=>$page]);
+        }else{
+            abort(404);
         }
         // return 404;
     }
