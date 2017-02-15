@@ -30,8 +30,8 @@
             @if ($item->url == 'menu')
                 <div class="subnav next-level-left">
                     <ul class="subnav-wrapper">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.skver.od.ua/wp-content/uploads/2017/01/МЕНЮ-ЗИМА-1.pdf">Основное меню</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.skver.od.ua/wp-content/uploads/2016/12/меню-коктейли-1.pdf">Меню Коктейли</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/foodmenu">Основное меню</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/cocktailmenu ">Меню Коктейли</a></li>
                     </ul>
                 </div>
             @endif

@@ -442,6 +442,29 @@ ul > li {
 .row.welcome-page {
   margin: 0;
 }
+.menu-pdf {
+  position: relative;
+  top: 20vh;
+  height: 80vh;
+}
+.link-pdf {
+  position: relative;
+  top: 20vh;
+}
+.link-pdf a {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 17px;
+}
+.link-pdf a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.section-pdf {
+  min-height: 100vh;
+}
 @media (max-width: 768px) {
   .mobile-none {
     display: none;

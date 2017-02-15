@@ -15,7 +15,13 @@ Route::get('/', function () {
     return view('welcome', ['title'=>'Главная']);
 });
 Route::get('/menu', function () {
-    return view('menupdf', ['title'=>'Меню']);
+    return view('menupdf', ['title'=>'Меню','pdfType'=>'foodmenu']);
+});
+Route::get('/foodmenu', function () {
+    return view('menupdf', ['title'=>'Меню','pdfType'=>'foodmenu']);
+});
+Route::get('/cocktailmenu', function () {
+    return view('menupdf', ['title'=>'Меню','pdfType'=>'cocktailmenu']);
 });
 Route::get('/gallery', 'PageController@gallery');
 Route::get('/{alias}', 'PageController@show');
