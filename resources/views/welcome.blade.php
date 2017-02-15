@@ -14,8 +14,6 @@
                  data-width="100%"
                  data-ratio="800/600"
                  data-minwidth="400"
-                 data-maxwidth="1000"
-                 data-minheight="300"
                  data-maxheight="100%">
                 <img src="/content/images/gallery_1_1440x900.jpg">
                 <img src="/content/images/gallery_2_1440x900.jpg">
