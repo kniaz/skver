@@ -473,18 +473,20 @@ ul > li {
 .menu-pdf {
   position: relative;
   top: 20vh;
+}
+.menu-pdf iframe {
   height: 80vh;
 }
 .link-pdf {
   position: relative;
-  top: 20vh;
+  top: 15vh;
 }
 .link-pdf a {
   color: #ffffff;
   text-align: center;
   width: 100%;
   display: block;
-  font-size: 17px;
+  font-size: 22px;
 }
 .link-pdf a:hover {
   text-decoration: none;
