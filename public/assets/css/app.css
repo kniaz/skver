@@ -458,10 +458,7 @@ ul > li {
   letter-spacing: 2px;
 }
 .member {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 15px;
-  margin: 30px 0;
+  text-align: center;
 }
 .member-name {
   margin: 0 0 5px;
@@ -476,7 +473,7 @@ ul > li {
   letter-spacing: 1px;
 }
 .container {
-  width: 970px;
+  max-width: 970px;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
