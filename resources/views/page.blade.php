@@ -26,6 +26,7 @@
                         <div style="background-image: url('{{ $slide->image }}')"
                              class="item__image col-sm-6"></div>
                     @endif
+                        <img src="{{ $slide->image }}" alt="" class="item-image-mobile">
                     <div class="col-xs-12 col-sm-6 item__description">
                         {!! $slide->text !!}
                     </div>

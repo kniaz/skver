@@ -51,12 +51,12 @@
     @foreach($menu->getMenu() as $item)
         <li>
 
-            @if ($item->url != 'menu')
+            @if ($item->url != '#')
                 <a href="{{$item->url}}">{{$item->name}}</a>
 
                 @else
 
-                <a href="#}">{{$item->name}}</a>
+                <a href="#">{{$item->name}}</a>
 
                 <div class="subnav next-level-left">
                     <ul class="subnav-wrapper">

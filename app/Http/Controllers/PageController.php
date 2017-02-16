@@ -9,6 +9,12 @@ use App\Page;
 
 class PageController extends Controller
 {
+    /**
+     * @param $alias
+     * @param null $alias2
+     * @param null $alias3
+     * @return mixed
+     */
     public function show($alias, $alias2 = null, $alias3 = null)
     {
 
@@ -30,6 +36,9 @@ class PageController extends Controller
         // return 404;
     }
 
+    /**
+     * @return mixed
+     */
     public function gallery()
     {
         $page = Page::with('slides')->where('alias', '=', 'gallery')->get();
@@ -43,6 +52,10 @@ class PageController extends Controller
         return view('gallery', ['galleries' => $galleries, 'page' => $page, 'breadcrumbs' => $breadcrumbs]);
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function pdfPage(Request $request)
     {
         $uri  = $request->path();
@@ -63,6 +76,10 @@ class PageController extends Controller
         return view('menupdf', ['page' => $page]);
     }
 
+    /**
+     * @param $page_id
+     * @param $breadcrumbs
+     */
     private function generateBreadcrumbs($page_id, &$breadcrumbs)
     {
         $page = Page::where('id', '=', $page_id)->get();
