@@ -274,7 +274,7 @@ img {
   z-index: 999;
 }
 #scene .button-content {
-  font-size: 40px;
+  font-size: 30px;
 }
 #scene .button-frame {
   border: none;
@@ -284,12 +284,40 @@ img {
 #scene .button-content {
   display: inline-block;
   padding: 30px;
-  border: 2px solid #fff;
   color: transparent;
   margin-left: -30px;
   line-height: 1;
   font-weight: 300;
-  letter-spacing: 5px;
+}
+#scene .button-content a {
+  position: relative;
+  padding: 10px 30px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#scene .button-content a:hover:before {
+  transform: translate(-4px, -4px);
+}
+#scene .button-content a:hover:after {
+  transform: translate(4px, 4px);
+}
+#scene .button-content a:before,
+#scene .button-content a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.15s ease-in-out;
+  border: 2px solid #fff;
+  box-sizing: border-box;
 }
 #scene .button-frame-inner {
   display: inline-block;
@@ -464,6 +492,35 @@ ul > li {
 }
 .section-pdf {
   min-height: 100vh;
+}
+.subnav {
+  position: absolute;
+  background: #000;
+  left: 0;
+  width: 220px;
+  display: none;
+}
+.subnav-wrapper {
+  display: block;
+  padding: 0;
+}
+.subnav-wrapper .menu-item {
+  display: block;
+  float: none;
+  padding: 5px 10px;
+}
+.subnav-wrapper .menu-item a {
+  line-height: 30px;
+  font-size: 10px;
+}
+.subnav-wrapper .menu-item a:before {
+  bottom: 5px;
+}
+.menu li a:hover {
+  text-decoration: none;
+}
+.menu li:hover .subnav {
+  display: block;
 }
 @media (max-width: 768px) {
   .mobile-none {
