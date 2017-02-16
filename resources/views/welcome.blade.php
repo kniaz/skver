@@ -45,11 +45,18 @@
                          data-fit="cover"
                          data-autoplay="true"
                          data-transition="crossfade">
-                        <img src="/content/images/gallery_1_1440x900.jpg">
-                        <img src="/content/images/gallery_2_1440x900.jpg">
-                        <img src="/content/images/gallery_3_1440x900.jpg">
-                        <img src="/content/images/gallery_4_1440x900.jpg">
-                        <img src="/content/images/gallery_5_1440x900.jpg">
+                        <img src="/content/images/main_1_1350x900.jpg">
+                        <img src="/content/images/main_2_1350x900.jpg">
+                        <img src="/content/images/main_3_1350x900.jpg">
+                        <img src="/content/images/main_4_1350x900.jpg">
+                        <img src="/content/images/main_5_1350x900.jpg">
+                        <img src="/content/images/main_6_1350x900.jpg">
+                        <img src="/content/images/main_7_1350x900.jpg">
+                        <img src="/content/images/main_8_1350x900.jpg">
+                        <img src="/content/images/main_9_1350x900.jpg">
+                        <img src="/content/images/main_10_1350x900.jpg">
+                        <img src="/content/images/main_11_1350x900.jpg">
+
                     </div>
                 </li>
                 <li class="layer" data-depth="0.40">

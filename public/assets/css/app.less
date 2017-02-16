@@ -310,7 +310,17 @@ svg:not(:root) {
   transition:         opacity .3s;
   position:           relative;
 }
-
+#scene {
+  .slide {
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 #scene a {
   color: #ffffff;
 }
@@ -450,82 +460,6 @@ ul > li {
   margin: 0;
 }
 
-//.menu {
-//  .subnav-wrapper {
-//    margin: 0;
-//  }
-//  .subnav a, .subnav li {
-//    color: #ffffff;
-//  }
-//  .subnav {
-//    zoom: 1;
-//    filter: alpha(opacity=0);
-//    -webkit-opacity: 0;
-//    -moz-opacity: 0;
-//    opacity: 0;
-//    visibility: hidden;
-//    position: absolute;
-//    left: -15px;
-//    top: 100%;
-//    padding: 0;
-//    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-//    -moz-transition: opacity .3s 0s, visibility 0s .3s;
-//    -o-transition: opacity .3s 0s, visibility 0s .3s;
-//    transition: opacity .3s 0s, visibility 0s .3s;
-//  }
-//  ul li:hover > .subnav {
-//    -webkit-transition-delay: 0s, 0s;
-//    -moz-transition-delay: 0s, 0s;
-//    -o-transition-delay: 0s, 0s;
-//    transition-delay: 0s, 0s;
-//    zoom: 1;
-//    filter: alpha(opacity=100);
-//    -webkit-opacity: 1;
-//    -moz-opacity: 1;
-//    opacity: 1;
-//    visibility: visible;
-//  }
-//  .subnav {
-//    background-color: #111111;
-//  }
-//  .nav-alt .subnav li {
-//    padding: 5px 30px;
-//    border-bottom: 1px solid transparent;
-//    float: none;
-//  }
-//   li {
-//    position: relative;
-//    list-style-type: none;
-//    padding: 0 30px;
-//  }
-//  li a {
-//    line-height: 1.5em;
-//    width: 140px;
-//    position: relative;
-//    padding: 10px 0;
-//    font-size: 13px;
-//    letter-spacing: 0;
-//    text-transform: none;
-//    zoom: 1;
-//    filter: alpha(opacity=60);
-//    -webkit-opacity: .6;
-//    -moz-opacity: .6;
-//    opacity: .6;
-//    -webkit-transition: opacity .3s;
-//    -moz-transition: opacity .3s;
-//    -o-transition: opacity .3s;
-//    transition: opacity .3s;
-//    font-weight: 600;
-//
-//    &:hover {
-//      zoom: 1;
-//      filter: alpha(opacity=100);
-//      -webkit-opacity: 1;
-//      -moz-opacity: 1;
-//      opacity: 1;
-//    }
-//  }
-//}
 
 .menu-pdf {
   position: relative;
@@ -542,7 +476,8 @@ ul > li {
   a {
     color:      #ffffff;
     text-align: center;
-    width: 100%;
+    width: 200px;
+    margin: 0 auto;
     display: block;
     font-size: 22px;
     &:hover {

@@ -351,6 +351,15 @@ svg:not(:root) {
   transition: opacity .3s;
   position: relative;
 }
+#scene .slide {
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+}
 #scene a {
   color: #ffffff;
 }
@@ -484,7 +493,8 @@ ul > li {
 .link-pdf a {
   color: #ffffff;
   text-align: center;
-  width: 100%;
+  width: 200px;
+  margin: 0 auto;
   display: block;
   font-size: 22px;
 }

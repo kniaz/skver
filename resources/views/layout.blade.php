@@ -34,7 +34,7 @@
     <img src="/assets/img/logo.png"
          alt="Сквер">
 </a>
-
+<div class="mobile-menu"> Menu</div>
 <nav class="menu">
     <ul>
     @inject('menu', 'App\Services\MainMenuService')
