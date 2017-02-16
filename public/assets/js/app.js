@@ -1,5 +1,7 @@
-$(document).ready(function() {
-  $('#fullpage').fullpage({
+$(document).ready(function () {
+  if ($(window).width() > 768) {
+    console.log(window.width);
+    $('#fullpage').fullpage({
       scrollingSpeed: 900,
       css3: true,
       resize: false,
@@ -11,5 +13,7 @@ $(document).ready(function() {
       navigation: true,
       navigationPosition: 'right'
     });
-    $('#scene').parallax();
+  }
+  $('#scene').parallax();
+
 });

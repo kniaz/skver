@@ -83,6 +83,12 @@ body {
   min-height: 100%;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .item__background {
+    position: static;
+    opacity: 1;
+  }
+}
 .gallery {
   background-image: url("../img/bg.png");
 }

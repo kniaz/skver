@@ -15,7 +15,12 @@ body {
   min-width:  100%;
   min-height: 100%;
   opacity:    0.5;
+  @media (max-width: 768px) {
+    position: static;
+    opacity:1;
+  }
 }
+
 
 .gallery {
   background-image: url("../img/bg.png");
