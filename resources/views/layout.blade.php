@@ -44,7 +44,7 @@
     <img src="/assets/img/logo.png"
          alt="Сквер">
 </a>
-<div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>Menu</div>
+<div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp; Menu</div>
 <nav class="menu">
     <ul>
     @inject('menu', 'App\Services\MainMenuService')
