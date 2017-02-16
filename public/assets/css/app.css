@@ -291,7 +291,7 @@ img {
 }
 #scene .button-content a {
   position: relative;
-  padding: 10px 30px;
+  padding: 30px 40px;
   text-align: center;
   color: #ffffff;
   border: none;
@@ -590,4 +590,8 @@ ul > li {
   .breadcrumbs li:after {
     color: #000;
   }
+}
+svg.second-border {
+  margin-top: 19px;
+  margin-left: 31px;
 }
