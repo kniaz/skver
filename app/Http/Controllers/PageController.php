@@ -34,29 +34,33 @@ class PageController extends Controller
     {
         $page = Page::with('slides')->where('alias', '=', 'gallery')->get();
 
-        $page = isset($page[0]) ? $page[0] : null;
+        $page        = isset($page[0]) ? $page[0] : null;
+        $breadcrumbs = [];
+        if ($page)
+            $this->generateBreadcrumbs($page->id, $breadcrumbs);
 
         $galleries = Page::with('slides')->where('is_gallery', '=', 1)->get();
-        return view('gallery', ['galleries' => $galleries, 'page' => $page]);
+        return view('gallery', ['galleries' => $galleries, 'page' => $page, 'breadcrumbs' => $breadcrumbs]);
     }
 
-    public function pdfPage(Request $request){
-        $uri = $request->path();
-        $page=[
-            'title'=>'Меню'
+    public function pdfPage(Request $request)
+    {
+        $uri  = $request->path();
+        $page = [
+            'title' => 'Меню'
         ];
 
         switch ($uri) {
             case 'foodmenu':
-                $page['src']= '/content/pdf/main-1.pdf';
-                $page['title']= 'Основное меню';
+                $page['src']   = '/content/pdf/main-1.pdf';
+                $page['title'] = 'Основное меню';
                 break;
             case 'cocktailmenu':
-                $page['src']= '/content/pdf/kokteli.pdf';
-                $page['title']= 'Меню коктейли';
+                $page['src']   = '/content/pdf/kokteli.pdf';
+                $page['title'] = 'Меню коктейли';
                 break;
         }
-        return view('menupdf', [ 'page' => $page]);
+        return view('menupdf', ['page' => $page]);
     }
 
     private function generateBreadcrumbs($page_id, &$breadcrumbs)

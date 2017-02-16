@@ -24,8 +24,18 @@
         <a href="/">Главная</a>
     </li>
     @foreach($breadcrumbs as $breadcrumb)
+
         <li>
-            <a href="{{$breadcrumb['alias']}}">{{$breadcrumb['title']}}</a>
+            @if(!$loop->last)
+            <a href="/{{$breadcrumb['alias']}}">
+                {{$breadcrumb['title']}}
+            </a>
+            @endif
+                @if($loop->last)
+
+                        {{$breadcrumb['title']}}
+
+                @endif
         </li>
     @endforeach
 </ul>
@@ -34,7 +44,7 @@
     <img src="/assets/img/logo.png"
          alt="Сквер">
 </a>
-<div class="mobile-menu"> Menu</div>
+<div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>Menu</div>
 <nav class="menu">
     <ul>
     @inject('menu', 'App\Services\MainMenuService')
