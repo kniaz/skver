@@ -25,13 +25,18 @@
     @inject('menu', 'App\Services\MainMenuService')
     @foreach($menu->getMenu() as $item)
         <li>
-            <a href="{{$item->url}}">{{$item->name}}</a>
 
-            @if ($item->url == 'menu')
+            @if ($item->url != 'menu')
+                <a href="{{$item->url}}">{{$item->name}}</a>
+
+                @else
+
+                <a href="#}">{{$item->name}}</a>
+
                 <div class="subnav next-level-left">
                     <ul class="subnav-wrapper">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/foodmenu">Основное меню</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/cocktailmenu ">Меню Коктейли</a></li>
+                        <li class="menu-item"><a href="/foodmenu">Основное меню</a></li>
+                        <li class="menu-item"><a href="/cocktailmenu ">Меню Коктейли</a></li>
                     </ul>
                 </div>
             @endif

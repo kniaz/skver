@@ -65,17 +65,15 @@
                 <li class="layer" data-depth="0.60">
                     <div class="button-wrapper">
 					<span class="second-border button-content button-frame" style="position: relative; ">
-						<span class="button-frame-inner" style="transform: translateX(0px) translateY(0px);">
+						<span>
 							<span class="second-line">МЕНЮ РЕСТОРАНА</span>
-							<span class="button-frame-hover"
-                                  style="position: absolute; left: -2px; top: -2px; right: -2px; bottom: -2px; display: block; border: 2px solid rgb(255, 255, 255); transform: translateX(0px) translateY(0px); opacity: 0;"></span>
 						</span>
 					</span>
                     </div>
                 </li>
                 <li class="layer" data-depth="0.80">
                     <div class="button-wrapper">
-                        <div class="button-content button-arrow" style="opacity: 1;">
+                        <div class="button-content button-arrow" >
                             <span class="second-line">МЕНЮ РЕСТОРАНА</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="second-border"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100%"
@@ -90,10 +88,8 @@
                 </li>
                 <li class="layer" data-depth="0.70">
                     <div class="button-wrapper">
-					<span class="button-content button-text">
-												<a href="/menu" class="second-line" data-replace="14 | 02 | 2017"
-                                                   data-base="МЕНЮ РЕСТОРАНА">МЕНЮ РЕСТОРАНА</a>
-						<div id="reservation-trigger"></div>
+					<span class="button-content">
+                        <a href="/menu" class="second-line" data-base="МЕНЮ РЕСТОРАНА">МЕНЮ РЕСТОРАНА</a>
 					</span>
                     </div>
                 </li>
