@@ -18,7 +18,7 @@
 
 </head>
 <body>
-@if($breadcrumbs)
+@if(isset($breadcrumbs) && $breadcrumbs )
 <ul class="breadcrumbs">
     <li>
         <a href="/">Главная</a>
