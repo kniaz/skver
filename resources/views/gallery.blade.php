@@ -15,7 +15,7 @@
                         <a href="{{$gallery->alias}}">
                             @inject('imageService', 'App\Services\ImageService')
 
-                        <img src="<?
+                        <img src="<?php
                             $slides = json_decode(isset($gallery->slides[0])? $gallery->slides[0]->gallery:"[]");
                             if(isset($slides[0])){
                                 echo $imageService->resizeImage($slides[0]->img);

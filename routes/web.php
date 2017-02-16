@@ -15,12 +15,10 @@ Route::get('/', function () {
     return view('welcome', ['title'=>'Главная']);
 });
 
-Route::get('/foodmenu', function () {
-    return view('menupdf', ['title'=>'Меню','pdfType'=>'foodmenu']);
-});
-Route::get('/cocktailmenu', function () {
-    return view('menupdf', ['title'=>'Меню','pdfType'=>'cocktailmenu']);
-});
+Route::get('/foodmenu', 'PageController@pdfPage');
+
+Route::get('/cocktailmenu', 'PageController@pdfPage');
+
 Route::get('/gallery', 'PageController@gallery');
 Route::get('/{alias}', 'PageController@show');
 Route::get('/{alias}/{alias2}', 'PageController@show');

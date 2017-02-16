@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 use App\Page;
 
 class PageController extends Controller
@@ -34,5 +35,24 @@ class PageController extends Controller
 
         $galleries = Page::with('slides')->where('is_gallery', '=', 1)->get();
         return view('gallery', ['galleries' => $galleries, 'page' => $page]);
+    }
+
+    public function pdfPage(Request $request){
+        $uri = $request->path();
+        $page=[
+            'title'=>'Меню'
+        ];
+
+        switch ($uri) {
+            case 'foodmenu':
+                $page['src']= '/content/pdf/main-1.pdf';
+                $page['title']= 'Основное меню';
+                break;
+            case 'cocktailmenu':
+                $page['src']= '/content/pdf/kokteli.pdf';
+                $page['title']= 'Меню коктейли';
+                break;
+        }
+        return view('menupdf', [ 'page' => $page]);
     }
 }
