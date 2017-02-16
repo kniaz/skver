@@ -125,9 +125,9 @@ body {
 .logo {
   z-index: 2;
   position: absolute;
-  width: 55px;
-  top: 10px;
-  left: 30px;
+  width: 50px;
+  top: 19px;
+  left: 21px;
 }
 img {
   max-width: 100%;
@@ -161,7 +161,7 @@ img {
   line-height: 80px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ffffff;
 }
 .menu li a:before {
   content: '';
@@ -199,7 +199,7 @@ img {
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
-  background: #fff;
+  background: #ffffff;
 }
 .gallery-page .fp-section {
   background: url("../img/bg.png");
@@ -214,7 +214,7 @@ img {
   -moz-transition: -moz-transform 0.7s;
   -o-transition: -o-transform 0.7s;
   transition: -webkit-transform 0.7s, -moz-transform 0.7s, -o-transform 0.7s, transform 0.7s;
-  background: #111;
+  background: #111111;
   overflow: hidden;
 }
 /*-----------*/
@@ -228,7 +228,7 @@ img {
   height: 120%;
   left: -10%;
   top: -10%;
-  background: #000;
+  background: #000000;
 }
 .opacity-30 {
   zoom: 1;
@@ -256,7 +256,7 @@ img {
 }
 #scene .button-header-wrapper h1 {
   font-size: 80px;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   line-height: 1.1;
   font-weight: 900;
@@ -293,7 +293,7 @@ img {
   position: relative;
   padding: 10px 30px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -316,13 +316,13 @@ img {
   width: 100%;
   height: 100%;
   transition: transform 0.15s ease-in-out;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   box-sizing: border-box;
 }
 #scene .button-frame-inner {
   display: inline-block;
   padding: 30px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   color: transparent;
   margin-left: -30px;
   line-height: 1;
@@ -343,7 +343,7 @@ svg:not(:root) {
 }
 #scene .button-text {
   border-color: transparent;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   -webkit-transition: opacity .3s;
   -moz-transition: opacity .3s;
@@ -352,7 +352,7 @@ svg:not(:root) {
   position: relative;
 }
 #scene a {
-  color: #fff;
+  color: #ffffff;
 }
 #reservation-trigger {
   display: none;
@@ -400,7 +400,7 @@ a:hover {
   min-height: 100%;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   background-repeat: repeat-x;
   background-size: cover;
   z-index: 2;
@@ -465,7 +465,7 @@ ul > li {
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: #fff;
+  background: #ffffff;
 }
 .row.welcome-page {
   margin: 0;
@@ -480,7 +480,7 @@ ul > li {
   top: 20vh;
 }
 .link-pdf a {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   width: 100%;
   display: block;
@@ -495,7 +495,7 @@ ul > li {
 }
 .subnav {
   position: absolute;
-  background: #000;
+  background: #000000;
   left: 0;
   width: 220px;
   display: none;
@@ -529,4 +529,29 @@ ul > li {
 }
 .gallery-item {
   padding: 16px;
+}
+.breadcrumbs {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+}
+.breadcrumbs li {
+  display: inline-block;
+  padding: 0 2px;
+}
+.breadcrumbs li a {
+  color: #ffffff;
+}
+.breadcrumbs li:after {
+  content: "/";
+  display: inline-block;
+  color: #ffffff;
+}
+.breadcrumbs li:last-child:after {
+  content: none;
 }

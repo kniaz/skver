@@ -8,6 +8,9 @@
           content="width=device-width, initial-scale=1">
 
     <title>@yield('title')</title>
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
+
 
     <link rel="stylesheet" href="/assets/css/app.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
@@ -15,6 +18,18 @@
 
 </head>
 <body>
+@if($breadcrumbs)
+<ul class="breadcrumbs">
+    <li>
+        <a href="/">Главная</a>
+    </li>
+    @foreach($breadcrumbs as $breadcrumb)
+        <li>
+            <a href="{{$breadcrumb['alias']}}">{{$breadcrumb['title']}}</a>
+        </li>
+    @endforeach
+</ul>
+@endif
 <a href="/" class="logo">
     <img src="/assets/img/logo.png"
          alt="Сквер">

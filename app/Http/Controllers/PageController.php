@@ -12,14 +12,17 @@ class PageController extends Controller
     {
 
         $alias = $alias .
-            ($alias2 ? "/" . $alias2 : "").
+            ($alias2 ? "/" . $alias2 : "") .
             ($alias3 ? "/" . $alias3 : "");
 
 
         $page = Page::with('slides')->where('alias', '=', $alias)->get();
         if (isset($page[0])) {
-            $page = $page[0];
-            return view('page', ['page' => $page]);
+            $page        = $page[0];
+            $breadcrumbs = [];
+            $this->generateBreadcrumbs($page->id, $breadcrumbs);
+
+            return view('page', ['page' => $page, 'breadcrumbs' => $breadcrumbs]);
         } else {
             abort(404);
         }
@@ -34,5 +37,21 @@ class PageController extends Controller
 
         $galleries = Page::with('slides')->where('is_gallery', '=', 1)->get();
         return view('gallery', ['galleries' => $galleries, 'page' => $page]);
+    }
+
+    private function generateBreadcrumbs($page_id, &$breadcrumbs)
+    {
+        $page = Page::where('id', '=', $page_id)->get();
+        $page = isset($page[0]) ? $page[0] : null;
+        if ($page) {
+            array_unshift($breadcrumbs, [
+                'title' => $page->breadcrumb_name,
+                'alias' => $page->alias
+            ]);
+            if ($page->parent) {
+                $this->generateBreadcrumbs($page->parent, $breadcrumbs);
+            }
+        }
+
     }
 }

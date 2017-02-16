@@ -4,6 +4,8 @@
 @section('keywords' ) {{ $page->seo_keywords }} @endsection
 @section('description' ) {{ $page->seo_description }} @endsection
 
+
+
 @section('content')
     <div id="fullpage">
         @foreach ($page->slides as $slide)

@@ -24,14 +24,9 @@ class ImageService
         $needHeight  = $h;
         if ($originRatio < $needRatio) {
             $needHeight = round($needWidth / $originRatio);
-//            var_dump($needHeight);
         } else {
             $needWidth = round($needHeight * $originRatio);
-//            var_dump($needWidth);
-
         }
-
-//        die('dsa');
         $manager->make(public_path() . $path)->resize($needWidth, $needHeight)->crop($w, $h)->save(public_path() . $savePath);
         return $savePath;
     }
