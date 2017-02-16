@@ -470,3 +470,6 @@ ul > li {
     display: none;
   }
 }
+.gallery-item {
+  padding: 16px;
+}

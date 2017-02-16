@@ -14,9 +14,7 @@
 Route::get('/', function () {
     return view('welcome', ['title'=>'Главная']);
 });
-Route::get('/menu', function () {
-    return view('menupdf', ['title'=>'Меню','pdfType'=>'foodmenu']);
-});
+
 Route::get('/foodmenu', function () {
     return view('menupdf', ['title'=>'Меню','pdfType'=>'foodmenu']);
 });
@@ -25,3 +23,5 @@ Route::get('/cocktailmenu', function () {
 });
 Route::get('/gallery', 'PageController@gallery');
 Route::get('/{alias}', 'PageController@show');
+Route::get('/{alias}/{alias2}', 'PageController@show');
+Route::get('/{alias}/{alias2}/{alias3}', 'PageController@show');
