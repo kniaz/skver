@@ -7,7 +7,7 @@ use Intervention\Image\ImageManager;
 
 class ImageService
 {
-    public function resizeImage($path, $w = 600, $h = 350)
+    public function resizeImage($path, $w = 600, $h = 350, $crop=true)
     {
         $savePath = str_replace('.jpg', "_{$w}x{$h}.jpg", $path);
         $savePath = str_replace('.png', "_{$w}x{$h}.png", $savePath);
@@ -22,7 +22,7 @@ class ImageService
         $needRatio   = $w / $h;
         $needWidth   = $w;
         $needHeight  = $h;
-        if ($originRatio < $needRatio) {
+        if (($originRatio < $needRatio) && $crop) {
             $needHeight = round($needWidth / $originRatio);
         } else {
             $needWidth = round($needHeight * $originRatio);

@@ -80,6 +80,11 @@
     @yield('content')
 
 
+<div id="preloader" class="">
+    <img src="/assets/img/preloader.png" alt="Loading">
+
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/js/jquery.fullpage.min.js"></script>
 <script src="/assets/js/jquery.parallax.min.js"></script>
