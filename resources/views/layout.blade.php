@@ -26,7 +26,7 @@
 @if(isset($breadcrumbs) && $breadcrumbs )
     <ul class="breadcrumbs">
         <li>
-            <a href="/">Главная</a>
+            <a href="{{ Request::path() == '/' ? '#' : '/' }}">Главная</a>
         </li>
         @foreach($breadcrumbs as $breadcrumb)
 
@@ -45,7 +45,7 @@
         @endforeach
     </ul>
 @endif
-<a href="/"
+<a href="{{ Request::path() == '/' ? '#' : '/' }}"
    class="logo">
     <img src="/assets/img/logo.png"
          alt="Сквер">
@@ -58,8 +58,13 @@
         @inject('menu', 'App\Services\MainMenuService')
         @foreach($menu->getMenu() as $item)
             <li>
-                <a href="{{$item->url}}">{{$item->name}}</a>
-                @if ($item->url == '#')
+                @if ($item->url == '/' && Request::path() == '/')
+                <a href="#">{{$item->name}}</a>
+                    @else
+                    <a href="{{$item->url}}">{{$item->name}}</a>
+
+                @endif
+            @if ($item->url == '#')
                     <div class="subnav next-level-left">
                         <ul class="subnav-wrapper">
                             <li class="menu-item">
