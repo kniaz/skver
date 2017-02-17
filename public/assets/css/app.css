@@ -726,6 +726,7 @@ ul > li {
   }
   .item-image-mobile {
     display: block;
+    width: 100%;
   }
 }
 svg.second-border {
@@ -789,8 +790,18 @@ svg.second-border {
   transform: translate(0, 0);
 }
 .slide-type-image-page .item__background {
-  opacity: 0.3;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+@media (max-width: 768px) {
+  .slide-type-image-page .item__background {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .home-left-button {
+    margin: 10px 0;
+    display: inline-block;
+  }
 }
