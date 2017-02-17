@@ -13,7 +13,7 @@
         <div class="col-md-3 col-sm-12 col-xs-12">
             <div class="home-info">
                 <div class="hidden-sm hidden-xs home-logo text-center">
-                    <a href="/"><img src="/content/images/logo_main.png" class="" alt="Ресторан «Сквер»"></a>
+                    <img src="/assets/img/logo.png" class="" alt="Ресторан «Сквер»">
                 </div>
                 <div class="home-info-inner">
 

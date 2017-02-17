@@ -9,7 +9,7 @@
 @section('content')
     <div id="fullpage">
         @foreach ($page->slides as $slide)
-            <div class="section">
+            <div class="section slide-type-{{$slide->type}}">
 
                 @if($slide->background)
                 <img src="{{ $slide->background }}"

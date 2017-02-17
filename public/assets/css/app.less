@@ -83,7 +83,7 @@ img {
   padding: 0;
   margin: 0;
   right: 80px;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   li {
     display: inline-block;
@@ -596,6 +596,10 @@ ul > li {
 
 .home-right {
   padding: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 .item-image-mobile {
   display: none;
@@ -783,5 +787,12 @@ svg.second-border {
       -o-transform: translate(0,0);
       transform: translate(0,0);
     }
+  }
+}
+.slide-type-image-page{
+  .item__background{
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
 }
